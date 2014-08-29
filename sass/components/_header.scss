@@ -1,17 +1,13 @@
-
-$border-header-top-color: #f0622e;
-
-
 header {
+  #header-section {
     @include outer-container;
-    
-    width:100%;
-    border-top: 3px solid $border-header-top-color;
-    
+
     section {
-        @include span-columns(12);
-        
-        width:1000px;
-        margin:0 auto;
+      @include span-columns(12);
+
+      width: 1000px;
+      margin: 0 auto;
     }
+
+  }
 }
