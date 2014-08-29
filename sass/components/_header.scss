@@ -1,13 +1,18 @@
 header {
+  background: url("../images/header/bg.jpg") no-repeat;
+
+  background-size: cover;
+  min-height: 300px;
+
   #header-section {
     @include outer-container;
 
     section {
       @include span-columns(12);
 
-      width: 1000px;
       margin: 0 auto;
-    }
 
+      width: 1000px;
+    }
   }
 }
