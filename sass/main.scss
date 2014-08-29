@@ -2,11 +2,17 @@
 
 @import 'h5bp';
 @import 'fonts';
-
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
 $pesticide-debug: false;
-
 @import 'components/components';
 
+// main styles
+$border-header-top-color: #f0622e;
+
+body {
+  min-width: 1024px;
+  font-family: pf_beausans_pro_reg;
+  border-top: 3px solid $border-header-top-color;
+}
