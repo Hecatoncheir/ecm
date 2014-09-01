@@ -13,8 +13,8 @@ if(isset($submit1) and ($phone1 != "")){
 /*формируем переменные, которые содержат данные, полученные с html-формы*/
 		// $to = 'denjob@mail.ru';
 	$to = 'xyz@tanais.ru';
-	// $to = 'rasart.pro@gmail.com';
-	$subject = 'LP ECM. Заказ звонка'; 
+	//$to = 'rasart.pro@gmail.com';
+	$subject = 'LP ECM. Вопрос';
 
 /* формируем кодировку правильную*/
 

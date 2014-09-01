@@ -29,8 +29,8 @@
       <!-- Add jQuery library -->
       <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-      <link rel="stylesheet" href="css/jquery.fancybox.css">
-      <script src="scripts/jquery.fancybox.js"></script>
+      <link rel="stylesheet" href="/css/jquery.fancybox.css">
+      <script src="/scripts/jquery.fancybox.js"></script>
 
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
@@ -48,7 +48,7 @@
                             <span>+7 (499) 390-94-77</span>
                         </a>
 
-                        <a href="mailto:rasart.pro@gmail.com?subject=Письмо%20с%20LP%20ECM">
+                        <a href="mailto:xyz@tanais.ru?subject=Письмо%20с%20LP%20ECM">
                             <i></i>
                             <span>Написать письмо</span>
                         </a>
