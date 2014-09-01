@@ -1,3 +1,11 @@
-@import 'normalize';
+@import '../modules/_normalize';
+@import '../modules/_pesticide';
+
 @import 'header';
-@import 'pesticide';
+@import "slide-1";
+@import "slide-2";
+@import "slide-3";
+@import "slide-4";
+@import "slide-5";
+@import "slide-6";
+

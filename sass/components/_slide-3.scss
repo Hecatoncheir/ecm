@@ -1,0 +1,46 @@
+#slide-3 {
+  clear: both;
+  @include background-image(url("../images/cone_top.jpg"), url("../images/cone_bottom.jpg"));
+  background-position: center top, center bottom;
+  background-repeat: repeat-x, repeat-x;
+
+  section {
+    @include outer-container;
+  }
+
+  .why {
+    @include span-columns(12);
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    .why-text {
+      @include span-columns(6 of 12);
+      text-align: right;
+
+      h4 {
+        color: #f0622e;
+        font-family: pf_beausans_pro_sebold;
+        font-size: em(18);
+        text-transform: uppercase;
+      }
+      p {
+        color: #756f71;
+        font-size: em(15);
+        font-family: pf_beausans_pro_light;
+      }
+    }
+
+    .why-text:last-child {
+      @include span-columns(6 of 12);
+      text-align: left;
+      h4 span {
+        color: #fff;
+        background: #70687c;
+        padding: 2px 5px;
+      }
+      p{font-size: em(14);}
+    }
+
+  }
+
+}

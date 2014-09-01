@@ -1,0 +1,36 @@
+
+//EXTEND
+.arrow-h {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: absolute;
+
+}
+
+
+#slide-2 {
+  background:#e5e8f1;
+  border-top: solid 2px #dcdfe7;
+  section {
+    @include outer-container;
+
+
+
+    p {
+      @include span-columns(12 of 12);
+      color: #756f71;
+      font-size: em(14);
+      font-family: pf_beausans_pro_light;
+    }
+
+    p span {
+      color: #f0622e;
+      font-size: em(16);
+      font-family: pf_beausans_pro_bold;
+    }
+  }
+
+}

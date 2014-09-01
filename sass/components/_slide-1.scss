@@ -1,0 +1,65 @@
+#slide-1 {
+  background: #fafaff;
+  margin-top: -15px;
+  padding-top: 5px;
+
+  section {
+    @include outer-container;
+  }
+  h2 {
+    color: #f0622e;
+    text-align: center;
+    font-family: pf_beausans_pro_thin;
+    font-size: em(18);
+  }
+
+  .video {
+    @include span-columns(5);
+    background: url("../images/video_bg.jpg") no-repeat;
+    width: 442px;
+    height: 382px;
+    margin-top: -40px;
+//    margin-left: -8px;
+    cursor: pointer;
+  }
+
+  p {
+    font-style: italic;
+    color: #756f71;
+    font-size: em(14);
+  }
+
+  .text {
+    @include span-columns(3);
+  }
+
+  .footer-text {
+    @include span-columns(7);
+    @include shift(5);
+    clear: both;
+    margin-top: -80px;
+  }
+
+  .offer {
+    @include span-columns(10);
+//    padding-left: 8px;
+    margin-top: -30px;
+
+    h3 {
+      font-size: em(18);
+      color: #f0622e;
+    }
+
+    p {
+      font-family: pf_beausans_pro_bold;
+      font-size: em(14);
+    }
+
+    p span {
+      color: #f0622e;
+    }
+
+  }
+
+}
+

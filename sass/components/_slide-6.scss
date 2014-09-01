@@ -1,0 +1,10 @@
+#slide-6 {
+  background: #eae5db;
+  border-top: 1px solid #fff;
+
+  section {
+    @include outer-container;
+
+  }
+
+}

@@ -9,21 +9,31 @@
   height: 22px;
 }
 
+.arrow {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+
+}
+
 //CODE
 header {
   background: url("../images/header/bg.jpg") no-repeat center top;
-
   background-size: cover;
 
   #header-section {
     @include outer-container;
     background: url("../images/header/section-background.png") no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 540px;
 
 
     section {
       @include span-columns(12);
+      @include shift(0);
       position: relative;
       margin: 0 auto;
 
@@ -84,7 +94,7 @@ header {
 
       h1 {
         @include span-columns(5 of 12);
-        @include shift(1);
+        @include shift(0);
         margin-top: -10px;
         font-size: em(17);
         font-family: pf_beausans_pro_bold;
@@ -93,6 +103,37 @@ header {
       }
 
     }
+
+    form {
+      position: absolute;
+      top: 210px;
+      left: 360px;
+
+      input {
+        @include placeholder {
+          color: #e78752;
+        }
+
+        text-align: center;
+
+        border:none;
+        outline: none;
+        float: left;
+        clear: both;
+        margin-left: 110px;
+        margin-bottom: 45px;
+        width: 140px;
+      }
+
+      input[type="submit"] {
+        background: url("../images/header/submit.png") no-repeat;
+        height: 35px;
+        margin-left: 120px;
+        margin-top: -5px;
+      }
+
+    }
+
 
     .main-info {
       clear: both;
@@ -107,29 +148,69 @@ header {
         padding: 3px;
       }
 
-      li:before {
-        content: "";
-        width: 0;
-        height: 0;
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        position: absolute;
-        left: -5px;
-        border-right:8px solid #f37802;
-      }
+      div:first-child {
+        span {
+          background: #756f71;
+          color: #fff;
+          padding: 2px 3px;
+        }
+        span span {
+          color: #f0deb3;
+        }
+        li {
+          text-align: right;
+        }
 
-      .marked-have:before {
-        content: "";
-        width: 0;
-        height: 0;
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-        position: absolute;
-        left: -5px;
-        border-right:8px solid #fff;
+        li:before {
+          @extend .arrow;
+          right: -5px !important;
+          border-left:8px solid #756f71;
+        }
+
+        .marked {
+          background: #fff !important;
+          color: #f0622e !important;
+        }
+
+        .marked-have:before {
+          @extend .arrow;
+          right: -5px;
+          border-left:8px solid #fff !important;
+        }
+
+        li:nth-child(1){
+          top:125px;
+          left: 60px;
+          width: 320px;
+        }
+
+        li:nth-child(2){
+          top: 190px;
+          left: 160px;
+        }
+
+        li:nth-child(3){
+          top: 265px;
+          left: 120px;
+          width: 320px;
+        }
+
       }
 
       div:last-child {
+
+        li:before {
+          @extend .arrow;
+          left: -5px;
+          border-right:8px solid #f37802;
+        }
+
+        .marked-have:before {
+         @extend .arrow;
+          left: -5px;
+          border-right:8px solid #fff !important;
+        }
+
         span {
 //          width: 290px;
           background: #f37802;
@@ -149,14 +230,26 @@ header {
         }
 
         li:nth-child(2) {
-          right: 80px;
+          right: 95px;
           top: 66px;
           color: #f0622e !important;
         }
 
+        li:nth-child(3) {
+          right: 0;
+          top:125px;
+          width: 290px;
+        }
+
+        li:nth-child(4) {
+          right: 0;
+          top:192px;
+          width: 290px;
+        }
+
 
       }
-      
+
     }
 
   }
