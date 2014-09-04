@@ -3,4 +3,4 @@ ecm
 
 ECM for Tanais
 
-Usin Sass, Bourbon, Neat, CssComb.
+using Sass, Bourbon, Neat, CssComb.
